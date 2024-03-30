@@ -1,0 +1,22 @@
+<!-- This is chat -->
+<nb-layout>
+    <nb-layout-column>
+      <nb-card size="large">
+        <nb-card-header>
+          Messages:
+        </nb-card-header>
+        <nb-list>
+            <nb-list-item *ngFor="let item of items; index as i">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>{{i+1}}</td>
+                            <td>{{item}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nb-list-item>
+        </nb-list>
+      </nb-card>
+    </nb-layout-column>
+</nb-layout>
