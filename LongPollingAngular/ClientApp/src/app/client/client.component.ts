@@ -2,6 +2,7 @@ import { Component, Inject, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HubConnection, HubConnectionBuilder, LogLevel } from '@microsoft/signalr';
 import * as signalR from '@microsoft/signalr';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-client',
@@ -14,7 +15,8 @@ export class ClientComponent{
   private _hubConnection: HubConnection;
   @Input() clientNumber: number = 0;
 
-  constructor(private _httpClient: HttpClient, @Inject('BASE_URL') baseUrl: string) { 
+  constructor(private _httpClient: HttpClient, @Inject('BASE_URL') baseUrl: string, 
+  private readonly simpleService: MessageService) { 
      this._hubConnection = new HubConnectionBuilder()
       .configureLogging(LogLevel.Error)
       .withUrl("http://localhost:5078/messageHub", {
@@ -25,6 +27,7 @@ export class ClientComponent{
       this._hubConnection.on('ReceiveMessage', (message) => {
         //console.log(message);
         this.messages.push(message);
+        this.simpleService.changeCount({count: this.messages.length, name: this.clientNumber});
       });
       this._hubConnection.start()
       .then(() => {console.log('connection started'); this.isConnected = true;})

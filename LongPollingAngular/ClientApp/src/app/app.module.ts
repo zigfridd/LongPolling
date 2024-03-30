@@ -12,6 +12,8 @@ import { ClientComponent } from './client/client.component';
 import { ChatComponent } from './chat/chat.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { Chart } from 'chart.js/auto'
+import { LineChartComponent } from './line-chart/line-chart.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     HomeComponent,
     ClientComponent,
     ChatComponent,
+    LineChartComponent,
     CounterComponent,
     FetchDataComponent
   ],
