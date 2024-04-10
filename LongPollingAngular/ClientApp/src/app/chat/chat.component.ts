@@ -10,5 +10,6 @@ import * as signalR from '@microsoft/signalr';
 })
 export class ChatComponent{
     @Input() items: string[] = [];
+    //commit from iOS
 }
 
