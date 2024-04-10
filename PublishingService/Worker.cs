@@ -1,6 +1,6 @@
 ﻿using DeliveryService;
 
-namespace PublishingService;
+namespace SharedLibraries;
 
 public class Worker : BackgroundService
 {

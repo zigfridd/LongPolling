@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryService", "Delivery
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongPollingAngular", "LongPollingAngular\LongPollingAngular.csproj", "{4C92898A-EE84-4AD6-B1F6-B66A5976425E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibraries", "SharedLibraries\SharedLibraries.csproj", "{548B591F-5A00-44E7-86E7-50FB189D79F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4C92898A-EE84-4AD6-B1F6-B66A5976425E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C92898A-EE84-4AD6-B1F6-B66A5976425E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C92898A-EE84-4AD6-B1F6-B66A5976425E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{548B591F-5A00-44E7-86E7-50FB189D79F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548B591F-5A00-44E7-86E7-50FB189D79F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548B591F-5A00-44E7-86E7-50FB189D79F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548B591F-5A00-44E7-86E7-50FB189D79F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
